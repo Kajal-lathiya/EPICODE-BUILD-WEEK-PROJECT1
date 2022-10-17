@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;700&display=swap");
+
+.card {
+  width: 86vh;
+  height: 75vh;
+  background-image: url("bg.jpg");
+  background-size: contain;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  color: rgb(235, 232, 229);
+  padding-left: 100px;
+
+  margin-top: 200px;
+}
+
+#mpEpiLogo {
+  height: 45px;
+  width: 200px;
+  place-items: "top-left";
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin: left 50px;
+}
+
+body {
+  background-color: rgb(8, 8, 8);
+}
+
+.mph1Bol {
+  font-weight: bold;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "outfit", sans-serif;
+}
+
+.inst {
+  color: #d20094;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "outfit", sans-serif;
+  margin-bottom: 50px;
+}
+
+.mpPar1 {
+  font-size: 1.3rem;
+  font-family: "Outfit", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-top: 10px;
+  font-weight: 200;
+  word-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 70%;
+  font-weight: 400;
+  font-family: "inter", sans-serif;
+}
+
+h3 {
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+}
+
+uo {
+  font-size: 1.2rem;
+  font-family: "inter", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-top: 10px;
+  font-weight: 300;
+  word-spacing: 0.1rem;
+  line-height: 160%;
+}
+
+.mpBoldFont {
+  font-weight: 500;
+}
+
+.uol {
+  margin-left: 1%;
+  margin-top: 5%;
+}
+
+.mpTickbox {
+  margin-top: 10%;
+  margin-left: 1%;
+  word-spacing: 0.1rem;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+}
