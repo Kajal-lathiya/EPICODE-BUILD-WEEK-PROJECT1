@@ -1,20 +1,30 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffcc;
-  background-image: url(../assests/bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+.card {
+  width: 86vh;
+  height: 75vh;
+  background-image: url("bg.jpg");
+  background-size: contain;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 5vh 7rem 5vh 7rem;
+  color: rgb(248, 244, 244);
+  padding-left: 10vh;
 }
-#header {
-  display: flex;
-  justify-content: space-between;
+
+#mpEpiLogo {
+  height: 3.2vh;
+  width: 13vh;
+  place-items: "top-left";
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  margin: left 4vh;
 }
-#logo-img {
-  height: 6vh;
-  width: auto;
-  object-fit: cover;
+
+body {
+  background-color: rgb(8, 8, 8);
+  height: 100vh;
+  width: 100vh;
 }
