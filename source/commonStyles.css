@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffcc;
+  background-image: url(../assests/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5vh 7rem 5vh 7rem;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+#logo-img {
+  height: 6vh;
+  width: auto;
+  object-fit: cover;
+}
