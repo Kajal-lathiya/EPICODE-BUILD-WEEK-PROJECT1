@@ -1,0 +1,92 @@
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 6rem;
+  --fg: #00ffff;
+  --bg: #9b6a9e;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10rem;
+}
+#main h1 {
+  font-size: 30px;
+  color: rgb(235, 232, 229); /* rgb(235, 232, 229) */
+  margin: 0;
+  padding: 0;
+}
+#options-main {
+  padding-block: 6vh;
+}
+.option-container {
+  display: flex;
+  justify-content: center;
+  margin-block: 3vh;
+}
+.option {
+  width: 25vw;
+  height: 11vh;
+  background: linear-gradient(#272952, rgb(35, 41, 79));
+  border-radius: 100px;
+  border: 1px solid #cdcbd0;
+  color: rgb(235, 232, 229);
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 3px 2px 2px transparent;
+}
+.margin-right {
+  margin-right: 40px;
+}
+.option:hover {
+  background: linear-gradient(#d20094, #900080);
+}
+
+#bottom h3 {
+  text-align: center;
+  color: rgb(235, 232, 229);
+}
+#bottom h3 span {
+  color: #d20094;
+}
+/*  */
