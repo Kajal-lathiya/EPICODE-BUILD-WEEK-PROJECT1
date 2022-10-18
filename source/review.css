@@ -91,7 +91,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
   font-size: 60px;
-  color: rgb(12, 2, 24);
+  color: #561e6e;
 }
 .rate:not(:checked) > label:before {
   content: "★ ";
