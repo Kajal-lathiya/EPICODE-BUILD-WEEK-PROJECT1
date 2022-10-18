@@ -94,6 +94,8 @@ const loadQuiz = () => {
         optionBtn.onclick = () => onSubmitButton(i, currentQuestion.incorrect_answers[i]);
         btnNode.appendChild(optionBtn)
     }
+    const h3 = document.getElementById('question-no');
+    h3.innerHTML = `QUESTION ${questionNumber + 1} <span>/ ${quizData.length}</span>`
 }
 window.onload = () => {
     let minutes = 60, display = document.getElementById('time');
