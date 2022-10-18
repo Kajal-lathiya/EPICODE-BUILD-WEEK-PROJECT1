@@ -41,7 +41,9 @@ div[role="progressbar"]::before {
   counter-reset: percentage var(--value);
   content: counter(percentage) "%";
 }
-
+.container {
+  padding: 5vh 7rem 0 7rem;
+}
 #main {
   display: flex;
   flex: 1;
@@ -64,7 +66,11 @@ div[role="progressbar"]::before {
 .option-column:hover {
   background: linear-gradient(#d20094, #900080);
 }
-
+#bottom {
+  position: absolute;
+  bottom: 7vh;
+  width: 100%;
+}
 #bottom h3 {
   text-align: center;
   color: rgb(235, 232, 229);

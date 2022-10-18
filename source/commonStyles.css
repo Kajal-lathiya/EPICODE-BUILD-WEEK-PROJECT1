@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5vh 7rem 5vh 7rem;
+  /* padding: 5vh 7rem 0 7rem; */
 }
 #header {
   display: flex;
