@@ -44,10 +44,12 @@ div[role="progressbar"]::before {
 
 #main {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-inline: 10rem;
+  height: 100%;
 }
 #main h1 {
   font-size: 30px;
@@ -55,30 +57,11 @@ div[role="progressbar"]::before {
   margin: 0;
   padding: 0;
 }
-#options-main {
-  padding-block: 6vh;
-}
-.option-container {
-  display: flex;
-  justify-content: center;
-  margin-block: 3vh;
-}
-.option {
-  width: 25vw;
-  height: 11vh;
-  background: linear-gradient(#272952, rgb(35, 41, 79));
-  border-radius: 100px;
-  border: 1px solid #cdcbd0;
-  color: rgb(235, 232, 229);
-  font-size: larger;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 3px 2px 2px transparent;
-}
+
 .margin-right {
   margin-right: 40px;
 }
-.option:hover {
+.option-column:hover {
   background: linear-gradient(#d20094, #900080);
 }
 
@@ -89,4 +72,30 @@ div[role="progressbar"]::before {
 #bottom h3 span {
   color: #d20094;
 }
-/*  */
+
+.option-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
+  margin-block: 10vh;
+}
+
+.option-column {
+  background: linear-gradient(#272952, rgb(35, 41, 79));
+  border-radius: 100px;
+  border: 1px solid #cdcbd0;
+  color: rgb(235, 232, 229);
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 3px 2px 2px transparent;
+}
+
+.option-row > button {
+  flex: 1 0 calc(50% - 20px);
+  height: 9vh;
+  margin-inline: 10px;
+  margin-block: 1vh;
+}

@@ -44,16 +44,56 @@ const startTimer = (duration, display) => {
     setInterval(() => {
         seconds = parseInt(timer % 60, 10);
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = seconds;
+        // display.textContent   = seconds;
         if (--timer < 0) {
             timer = duration
         }
     }, 1000)
 }
+
+const onSubmitButton = (index, answer) => {
+    console.log('index:', index);
+    if (answer) {
+        if (answer === quizData[questionNumber].correct_answer) {
+            score++;
+        }
+        questionNumber++;
+        if (questionNumber < quizData.length) {
+            loadQuiz();
+        } else {
+            const quizNode = document.getElementById('main');
+            let percentage = (100 * score) / quizData.length;
+            quizNode.style.textAlign = 'center';
+            quizNode.style.paddingTop = '20px';
+            quizNode.innerHTML = `<h1>Results</h1>
+            <h3>Quiz completed successfully</h3>
+            <h3>Score</h3>
+            <h1>${percentage}%</h1>
+            <h5>${score}/${quizData.length} questions</h5>
+            <button onclick="location.reload()">Realod</button>
+            `
+        }
+    }
+}
+
 const loadQuiz = () => {
     const currentQuestion = quizData[questionNumber];
     h1.innerText = currentQuestion.question;
-
+    let btnNode = document.getElementById('option-btns');
+    let buttonElements = document.querySelectorAll("#option-btns button");
+    if (buttonElements) {
+        for (let i = 0; (button = buttonElements[i]); i++) {
+            button.parentNode.removeChild(button);
+        }
+    }
+    for (let i = 0; i < currentQuestion.incorrect_answers.length; i++) {
+        let optionBtn = document.createElement('button');
+        optionBtn.innerText = currentQuestion.incorrect_answers[i];
+        optionBtn.id = 'op' + i;
+        optionBtn.className = 'option-column';
+        optionBtn.onclick = () => onSubmitButton(i, currentQuestion.incorrect_answers[i]);
+        btnNode.appendChild(optionBtn)
+    }
 }
 window.onload = () => {
     let minutes = 60, display = document.getElementById('time');
