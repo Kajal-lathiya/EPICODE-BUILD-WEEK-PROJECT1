@@ -1,0 +1,1 @@
+const percent = document.getElementById;
