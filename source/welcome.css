@@ -3,7 +3,7 @@
 .card {
   width: 86vh;
   height: 75vh;
-  background-image: url("bg.jpg");
+  background-image: url("/assests/");
   background-size: contain;
   margin: auto;
   position: absolute;
@@ -108,6 +108,8 @@ uo {
   font-family: "inter", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
+}
+#proceedChange {
   cursor: pointer;
 }
 
