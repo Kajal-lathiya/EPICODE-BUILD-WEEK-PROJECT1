@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WELCOME TO YOUR EXAM</title>
-  <link rel="stylesheet" href="/source/welcome.css">
+  <link rel="stylesheet" href="./welcome.css">
+  <link rel="stylesheet" href="./commonStyles.css">
 </head>
-
 <body>
   <div class="card">
     <div>
-      <img id="mpEpiLogo" alt="epicode_logo" src="/assests/epicode_logo.png" /><br />
+      <img id="mpEpiLogo" alt="epicode_logo" src="../assests/epicode_logo.png" /><br />
       <span class="mpEpiName"></span>
     </div>
-
     <h1>Welcome to <br /><span class="mph1Bol">your exam<br /></span></h1>
-
     <div>
-
     </div>
     <div>
       <p>
@@ -44,14 +40,13 @@
       </uo>
     </div>
     <div class="mpTickbox">
-      <input id="checkbox" type="checkbox" checked="checked" onchange="buttonCheck()"/>
+      <input id="checkbox" type="checkbox" />
       <span>I promise to answer myself without help from anyone</span>
-      <button class="proceed">PROCEED</button>
-
+      <button class="proceed" id="proceed-btn">PROCEED</button>
     </div>
 
   </div>
- <script href="/source/welcome.js"></script>
+ <script src="./welcome.js"></script>
 
 </body>
 
