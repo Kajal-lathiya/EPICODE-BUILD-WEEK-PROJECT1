@@ -42,16 +42,16 @@ div[role="progressbar"]::before {
   content: counter(percentage) "%";
 }
 .container {
-  padding: 5vh 7rem 0 7rem;
+  margin: 0;
 }
 #main {
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-inline: 10rem;
-  height: 100%;
+  min-height: 50vh;
+  margin-block: 6vh;
 }
 #main h1 {
   font-size: 30px;
@@ -67,12 +67,10 @@ div[role="progressbar"]::before {
   background: linear-gradient(#d20094, #900080);
 }
 #bottom {
-  position: absolute;
-  bottom: 7vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #bottom h3 {
-  text-align: center;
   color: rgb(235, 232, 229);
 }
 #bottom h3 span {
@@ -85,7 +83,7 @@ div[role="progressbar"]::before {
   flex-wrap: wrap;
   width: 100%;
   flex: 1;
-  margin-block: 10vh;
+  margin-top: 10vh;
 }
 
 .option-column {
