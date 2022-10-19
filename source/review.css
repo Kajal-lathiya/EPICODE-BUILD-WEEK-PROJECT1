@@ -60,7 +60,7 @@ body {
   font-size: 1.5rem;
   font-family: "Outfit", sans-serif;
   color: rgb(235, 232, 229);
-  margin-top: 100px;
+  margin-top: 10%;
   margin-bottom: 0;
   font-weight: 400;
   text-align: center;
@@ -78,11 +78,11 @@ body {
 .rate {
   padding-top: 1%;
   height: 46px;
+
   padding-right: 20%;
-}
-.rate:not(:checked) > input {
+
+  padding-right: 30%;
   position: absolute;
-  top: -9999px;
 }
 .rate:not(:checked) > label {
   float: right;
@@ -116,7 +116,11 @@ body {
   color: aliceblue;
   width: 63%;
   height: 10%;
+
   margin-top: 30px;
+
+  margin-top: 5%;
+
   margin-left: 21%;
   margin-right: 18.5%;
 }
