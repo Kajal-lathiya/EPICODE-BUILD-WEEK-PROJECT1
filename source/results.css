@@ -48,19 +48,6 @@ body {
   line-height: 1vh;
 }
 
-.circle {
-  background-color: transparent;
-  border-radius: 50%;
-  height: 23vh;
-  width: 23vh;
-  border: 5vh solid rgb(0, 238, 255);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 5vh #151818;
-}
-
 .resultcircle {
   display: flex;
   text-align: center;
@@ -80,7 +67,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.circle p {
+#circlebox p {
   transform: translateY(50%);
 }
 
