@@ -1,92 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;700&display=swap");
 
-/* div:not(#mpEpiLogo, #logo) {
-  text-align: left;
-  margin-left: 23.5%;
-} */
-
-#logo {
-  padding-bottom: 2%;
-  margin-left: 5%;
-}
-
-/* .mph1Bol {
-  font-weight: bold;
-  font-size: 6rem;
-  font-weight: 700;
-  font-family: "outfit", sans-serif;
-} */
-
-/* .inst {
-  color: #d20094;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-bottom: -1%;
-} */
-
-/* .mpPar1 {
-  font-size: 1.2rem;
-  color: rgb(248, 244, 244);
-  font-weight: 200;
-} */
-
-/* #uol {
-  font-size: 1.2rem;
-  font-family: "inter", sans-serif;
-  color: rgb(235, 232, 229);
-  font-weight: 300;
-  margin-top: 2.5%;
-  padding-left: 0.5%;
-} */
-
 li {
   line-height: 150%;
 }
-
-/* #mpBoldFont {
-  font-weight: 500;
-} */
-
-/* .mpTickbox {
-  margin-top: 7%;
-  word-spacing: 0.1rem;
-  font-family: "inter", sans-serif;
-  font-weight: 500;
-} */
-
-/* #proceed {
-  height: 6vh;
-  width: 25vh;
-  background-color: #00ffff;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: 0 0 5vh #00ffff;
-  border-color: #00ffff;
-  font-family: "inter", sans-serif;
-  font-weight: bolder;
-  font-size: 1.8rem;
-  cursor: pointer;
-  margin-left: 50%;
-  transform: translateY(-65%);
-} */
-
-/* input[type="checkbox"] {
-  transform: translateY(1vh);
-  appearance: none;
-  height: 2.5vh;
-  width: 2.5vh;
-  background-color: none;
-  border: solid 3px white;
-  cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  content: "";
-  background-color: rgb(177, 177, 177);
-} */
-
-/* ADD NEW STYLES */
-
 .container {
   margin: 0;
 }
@@ -100,7 +16,6 @@ input[type="checkbox"]:checked {
   color: rgb(235, 232, 229);
   font-family: "inter", sans-serif;
 }
-
 .font-size2 {
   color: #c2128d;
   font-size: 2rem;

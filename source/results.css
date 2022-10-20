@@ -1,7 +1,3 @@
-body div {
-  margin-left: 0%;
-}
-
 span {
   filter: brightness(90%);
 }
@@ -21,48 +17,6 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-
-/* #results {
-  font-size: 4rem;
-  margin-bottom: -0.5%;
-} */
-
-/* #summary {
-  font-size: 1.6rem;
-} */
-
-/* #flexcontent {
-  display: inline-flex;
-  margin-top: 10%;
-} */
-/* 
-h1 {
-  font-size: 4rem;
-  margin-bottom: -5%;
-} */
-
-/* .correctstyle,
-.wrongstyle {
-  font-weight: 400;
-  margin-bottom: -15%;
-} */
-/* 
-.btn {
-  margin-top: 20%;
-  color: rgb(255, 255, 255);
-  background: transparent;
-  border: 3px solid white;
-  cursor: pointer;
-  height: 6vh;
-  width: 20%;
-  box-sizing: border-box;
-  box-shadow: 0 0 4px #ffffff;
-  font-family: "outfit", sans-serif;
-  font-size: 1.8rem;
-  text-shadow: 0 0 4px #ffffff;
-} */
-
-/* ADD NEW STYLES */
 
 .result-div {
   display: flex;
@@ -120,38 +74,6 @@ h1 {
 .light-color {
   color: #dfd3e2;
 }
-
-#circleBar {
-  text-align: center;
-}
-#circleBar .round {
-  /* min-height: 255px; */
-  /* margin-top: 30px; */
-  /* position: relative; */
-  /* margin-bottom: 20px; */
-}
-#circleBar .round strong {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  transform: translate(-50%);
-  font-size: 40px;
-  color: #3f3a3a;
-  font-weight: 100; */
-}
-/* #circleBar span {
-  display: block;
-  color: #999;
-  font-size: 16px;
-  margin-top: 10px;
-} */
-/* #circleBar span i {
-  color: #092352;
-  font-size: 22px;
-  margin-right: 6px;
-} */
-
 .circular {
   height: 100px;
   width: 100px;
