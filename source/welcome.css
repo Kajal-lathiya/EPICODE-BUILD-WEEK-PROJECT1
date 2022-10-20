@@ -14,6 +14,7 @@ div:not(#mpEpiLogo, #logo) {
   font-weight: bold;
   font-size: 6rem;
   font-weight: 700;
+  font-family: "outfit", sans-serif;
 }
 
 .inst {
@@ -83,7 +84,6 @@ input[type="checkbox"] {
   width: 2.5vh;
   background-color: none;
   border: solid 3px white;
-
   cursor: pointer;
 }
 
