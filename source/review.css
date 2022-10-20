@@ -1,9 +1,9 @@
-.revPageButton {
+/* .revPageButton {
   display: grid;
   align-content: center;
-}
+} */
 
-.revPageH1 {
+/* .revPageH1 {
   margin-top: 0;
   margin-bottom: 0.5em;
   text-align: center;
@@ -13,9 +13,9 @@
   font-family: "outfit", sans-serif;
   color: rgb(235, 232, 229);
   word-spacing: -0.2rem;
-}
+} */
 
-.revPagePar {
+/* .revPagePar {
   font-size: 1.5rem;
   font-family: "Outfit", sans-serif;
   color: rgb(235, 232, 229);
@@ -24,9 +24,9 @@
   font-weight: 400;
   text-align: center;
   word-spacing: 0.15rem;
-}
+} */
 
-.revPagePar2 {
+/* .revPagePar2 {
   font-size: 1.5rem;
   font-family: "Outfit", sans-serif;
   color: rgb(235, 232, 229);
@@ -35,17 +35,17 @@
   font-weight: 400;
   text-align: center;
   word-spacing: 0.15rem;
-}
+} */
 
-.revPageHR {
+/* .revPageHR {
   margin-left: 13em;
   margin-right: 13em;
   background-color: #900080;
   height: 2px;
   border: none;
-}
+} */
 
-.rate {
+/* .rate {
   padding-top: 1%;
   height: 46px;
 
@@ -84,8 +84,8 @@
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #00ffff;
-}
-.revPagePlaceholder {
+} */
+/* .revPagePlaceholder {
   background: none;
   border: none;
   color: aliceblue;
@@ -98,7 +98,7 @@
 
 .revPagePlaceholder:focus {
   outline: none;
-}
+} */
 
 .revPageButton {
   margin-top: 7%;
@@ -133,4 +133,113 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+/* ADD NEW STYLES */
+
+.container {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revPageH1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "outfit", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-bottom: 0;
+}
+.rate {
+  /* padding-top: 1%;
+  height: 46px;
+
+  padding-right: 20%;
+
+  padding-right: 30%;
+  position: absolute;
+  padding-right: 20%; */
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 60px;
+  color: #561e6e;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #00ffff;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #00ffff;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #00ffff;
+}
+
+.revPagePar {
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.marginTop {
+  margin-top: 35px !important;
+}
+#footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+#morinfoBtn {
+  height: 55px;
+  padding-inline: 3rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: #00ffff;
+  box-sizing: border-box;
+  box-shadow: 0 0 5vh #00ffff;
+  font-family: "inter", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #0b113b;
+}
+
+.revPagePlaceholder {
+  background: none;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  border-bottom-color: #900080;
+  border-bottom-style: solid;
+  color: aliceblue;
+  width: 63%;
+  height: 10%;
+  margin-top: 5%;
+  margin-left: 21%;
+  margin-right: 18.5%;
+}
+
+.revPagePlaceholder:focus {
+  outline: none;
 }

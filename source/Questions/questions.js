@@ -77,11 +77,14 @@ const goToNextQuestion = () => {
         loadQuiz();
     } else {
         const result = {
-            totalQuestions: quizData.length,
-            correctAnswers: score,
-            inCorrectAnswers: incorrectAnswers
+            "totalQuestions": quizData.length,
+            "correctAnswers": score,
+            "inCorrectAnswers": incorrectAnswers
         }
-        location.href = "../results.html?result=" + result;
+        let res = JSON.stringify(result);
+        window.location.href = `../results.html?data=${res}`;
+
+
     }
 }
 const onSubmitButton = (answer) => {

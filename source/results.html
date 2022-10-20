@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WELCOME TO YOUR EXAM</title>
-    <link rel="stylesheet" href="results.css">
-    <link rel="stylesheet" href="commonStyles.css">
-    <script src="results.js" defer>
-    </script>
-
-
-</head>
-
-<body>
-    <div id="logo">
-        <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
-    </div>
-
+    <link rel="stylesheet" href="results.css" />
+    <link rel="stylesheet" href="commonStyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <img src="./assests/epicode_logo.png" id="logo-img" />
+      </div>
+      <div class="result-div">
+        <h1>Results</h1>
+        <p id="summary">The summary of your answers:</p>
+      </div>
+      <div id="flexcontent">
         <div>
-            <h1 id="results">Results</h1><span id="summary">The summary of your answers:</span>
+          <h1 class="fontWeight white-Color">Correct</h1>
+          <h1 class="percentage white-Color">66.7%</h1>
+          <span class="white-Color">4/6 questions</span>
         </div>
-
-        <div id="flexcontent">
-            <div class="correct">
-                <h1 class="correctstyle">Correct</h1><br />
-                <h1>%</h1><br /></h1><span>4/6 questions</span>
+        <div class="circular">
+          <div class="inner"></div>
+          <div class="outer"></div>
+          <div class="numb">0%</div>
+          <div class="circle">
+            <div class="dot">
+              <span></span>
             </div>
-
-            <div class="circle">
-                <h1>placeholder for circle</h1>
+            <div class="bar left">
+              <div class="progress"></div>
             </div>
-            <div class="wrong">
-                <h1 class="wrongstyle">Wrong</h1><br />
-                <h1>%</h1><br /><span>2/6 questions</span>
+            <div class="bar right">
+              <div class="progress"></div>
             </div>
-
+          </div>
         </div>
-
-        <div><a href="review.html"><button class="btn">RATE US</button></a></div>
-</body>
-
+        <!-- <div
+            class="round"
+            data-value="0.65"
+            data-size="200"
+            data-thickness="6"
+          >
+            <strong></strong>
+            <span
+              ><i class="fa fa-jsfiddle" aria-hidden="true"></i>
+              progressbar</span
+            >
+          </div> -->
+        <div class="wrong">
+          <h1 class="fontWeight light-color">Wrong</h1>
+          <h1 class="percentage light-color">33.3%</h1>
+          <span class="light-color">2/6 questions</span>
+        </div>
+      </div>
+    </div>
+    <footer id="bottom">
+      <button id="btn">RATE US</button>
+    </footer>
+    <script src="./result.js"></script>
+  </body>
 </html>

@@ -1,67 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;700&display=swap");
 
-div:not(#mpEpiLogo, #logo) {
+/* div:not(#mpEpiLogo, #logo) {
   text-align: left;
   margin-left: 23.5%;
-}
+} */
 
 #logo {
   padding-bottom: 2%;
   margin-left: 5%;
 }
 
-.mph1Bol {
+/* .mph1Bol {
   font-weight: bold;
   font-size: 6rem;
   font-weight: 700;
   font-family: "outfit", sans-serif;
-}
+} */
 
-.inst {
+/* .inst {
   color: #d20094;
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: -1%;
-}
+} */
 
-.mpPar1 {
+/* .mpPar1 {
   font-size: 1.2rem;
   color: rgb(248, 244, 244);
   font-weight: 200;
-}
+} */
 
-h1 {
-  font-size: 6rem;
-  line-height: 70%;
-  font-weight: 400;
-  font-family: "inter", sans-serif;
-}
-
-#uol {
+/* #uol {
   font-size: 1.2rem;
   font-family: "inter", sans-serif;
   color: rgb(235, 232, 229);
   font-weight: 300;
   margin-top: 2.5%;
   padding-left: 0.5%;
-}
+} */
 
 li {
   line-height: 150%;
 }
 
-#mpBoldFont {
+/* #mpBoldFont {
   font-weight: 500;
-}
+} */
 
-.mpTickbox {
+/* .mpTickbox {
   margin-top: 7%;
   word-spacing: 0.1rem;
   font-family: "inter", sans-serif;
   font-weight: 500;
-}
+} */
 
-#proceed {
+/* #proceed {
   height: 6vh;
   width: 25vh;
   background-color: #00ffff;
@@ -75,9 +68,9 @@ li {
   cursor: pointer;
   margin-left: 50%;
   transform: translateY(-65%);
-}
+} */
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   transform: translateY(1vh);
   appearance: none;
   height: 2.5vh;
@@ -90,4 +83,99 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   content: "";
   background-color: rgb(177, 177, 177);
+} */
+
+/* ADD NEW STYLES */
+
+.container {
+  margin: 0;
+}
+#font-bold {
+  font-weight: bolder;
+}
+#big-font {
+  font-size: 5rem;
+  line-height: 80%;
+  font-weight: 400;
+  color: rgb(235, 232, 229);
+  font-family: "inter", sans-serif;
+}
+
+.font-size2 {
+  color: #c2128d;
+  font-size: 2rem;
+  margin: 0;
+}
+.paragraph {
+  font-size: 1.1rem;
+  color: rgb(235, 232, 229);
+  font-weight: 300;
+  margin-top: 7px;
+  margin-bottom: 7vh;
+}
+#uol {
+  font-size: 1.1rem;
+  font-family: "inter", sans-serif;
+  color: rgb(235, 232, 229);
+  font-weight: 300;
+}
+#mpBoldFont {
+  font-weight: 500;
+}
+
+.mpTickbox {
+  /* margin-top: 7%; */
+  word-spacing: 0.1rem;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+}
+#bottom {
+  /* position: fixed; */
+  /* display: flex; */
+  justify-self: flex-end;
+  bottom: 0;
+  height: 10vh;
+  background-color: red;
+  justify-content: space-between;
+}
+#boxdiv {
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  margin: 0;
+  padding-left: 10px;
+  color: rgb(235, 232, 229);
+}
+input[type="checkbox"] {
+  appearance: none;
+  height: 2.6vh;
+  width: 2.6vh;
+  background-color: none;
+  border: solid 2px white;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  content: "";
+  background-color: rgb(177, 177, 177);
+}
+
+#footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#proceed-btn {
+  height: 60px;
+  padding-inline: 4rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: #00ffff;
+  box-sizing: border-box;
+  box-shadow: 0 0 5vh #00ffff;
+  font-family: "inter", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #0b113b;
 }

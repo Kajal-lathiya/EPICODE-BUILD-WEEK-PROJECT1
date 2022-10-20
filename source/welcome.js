@@ -1,5 +1,5 @@
 
-const proceedButton = document.getElementById('proceed');
+const proceedButton = document.getElementById('proceed-btn');
 const checkboxNode = document.getElementById("checkbox");
 
 const buttonCheck = () => {
@@ -20,6 +20,5 @@ proceedButton.addEventListener('click', () => {
 })
 
 window.onload = () => {
-  console.log('proceedButton:', proceedButton);
   buttonCheck();
 }
