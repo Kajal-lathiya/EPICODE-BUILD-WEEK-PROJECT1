@@ -17,6 +17,7 @@ body {
 body div {
   height: 100%;
   width: 75%;
+  margin-top: 5%;
 }
 
 #logo {
