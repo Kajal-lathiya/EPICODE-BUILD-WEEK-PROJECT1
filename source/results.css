@@ -1,50 +1,63 @@
-.card {
-  width: 86vh;
-  height: 75vh;
-  background-image: url("bg.jpg");
-  background-size: contain;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  color: rgb(248, 244, 244);
+body div {
+  margin-left: 0%;
 }
 
-#mpEpiLogo {
-  height: 3.2vh;
-  width: 13vh;
-  place-items: "top-left";
-  padding-top: 4vh;
-  padding-bottom: 5vh;
-  padding-left: 8vh;
+span {
+  filter: brightness(90%);
 }
 
-body {
-  background-color: #0e0e0e;
-  height: 100vh;
-  width: 100vh;
+a:link {
+  text-decoration: none;
 }
 
-.header h1 {
-  text-align: center;
-  font-family: "inter", sans-serif;
-  font-weight: 600;
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#results {
   font-size: 4rem;
-}
-.header h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-weight: 200;
-  line-height: 1vh;
+  margin-bottom: -0.5%;
 }
 
-.header {
-  line-height: 1vh;
+#summary {
+  font-size: 1.6rem;
 }
-.results {
-  display: flex;
+
+#flexcontent {
+  display: inline-flex;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: -5%;
+}
+
+.correctstyle,
+.wrongstyle {
+  font-weight: 400;
+  margin-bottom: -15%;
+}
+
+.btn {
+  margin-top: 20%;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: 3px solid white;
+  cursor: pointer;
+  height: 6vh;
+  width: 20%;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #ffffff;
+  font-family: "outfit", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 0 0 4px #ffffff;
 }

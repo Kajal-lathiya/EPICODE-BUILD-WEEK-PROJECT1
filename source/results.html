@@ -7,29 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WELCOME TO YOUR EXAM</title>
     <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="commonStyles.css">
+    <script src="results.js" defer>
+    </script>
+
+
 </head>
 
 <body>
-    <div class="card">
-        <div style="height:7vh">
-            <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
-            <span class="mpEpiName"></span>
-        </div>
-        <div class="header">
-            <h1>Results<br /></h1>
-            <h2>The summary of your answers:</h2>
+    <div id="logo">
+        <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
+    </div>
+
+        <div>
+            <h1 id="results">Results</h1><span id="summary">The summary of your answers:</span>
         </div>
 
-        <div class="results">
-            <h2>
-                <h2 id="correct">Correct </br>etc%</br></h2>
-                <h3>etc/etc questions</h3>
-                <div id="circle"></div>
-                <h2 id="wrong">Wrong</br>etc%</br></h2>
-                <h3>etc/etc questions</h3>
-            </h2>
-            </h2>
+        <div id="flexcontent">
+            <div class="correct">
+                <h1 class="correctstyle">Correct</h1><br />
+                <h1>%</h1><br /></h1><span>4/6 questions</span>
+            </div>
+
+            <div class="circle">
+                <h1>placeholder for circle</h1>
+            </div>
+            <div class="wrong">
+                <h1 class="wrongstyle">Wrong</h1><br />
+                <h1>%</h1><br /><span>2/6 questions</span>
+            </div>
+
         </div>
+
+        <div><a href="review.html"><button class="btn">RATE US</button></a></div>
 </body>
 
 </html>
