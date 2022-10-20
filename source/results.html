@@ -15,51 +15,34 @@
 </head>
 
 <body>
-    <div class="card">
-        <div style="height:7vh">
-            <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
-            <span class="mpEpiName"></span>
+    <div id="logo">
+        <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
+    </div>
+
+    <center>
+        <div>
+            <h1 id="results">Results</h1><span id="summary">The summary of your answers:</span>
         </div>
-        <div class="header">
-            <h1>Results<br /></h1>
-            <h2>The summary of your answers:</h2>
-        </div>
-        <div class="resultcircle">
-            <h3 class="correct"><strong style="font-size : 4rem; font-weight: 200; ">Correct</strong>
-                <br /><strong style="font-size : 3rem;">66.7%</strong><br /><strong
-                    style="font-weight: 100;color:rgb(224, 224, 224)">4/6
-                    questions</strong>
-            </h3>
-            <div id="circlebox">
-                <p style="font-size:1.5rem;font-weight:200;"><strong
-                        style="font-size:2rem;">Congratulations!</strong><br /><strong
-                        style="color:#00FFFF;font-size:2rem;">You
-                        passed the
-                        exam!</strong><br /><br />We'll send you the certificate <br /> in
-                    few minutes. <br />Check your email (including <br />
-                    promotions/spam folder)
+
+        <div id="flexcontent">
+            <div class="correct">
+                <h1 class="correctstyle">Correct</h1><br />
+                <h1>%</h1><br /></h1><span>4/6 questions</span>
             </div>
 
-            </p>
+            <div class="circle">
+                <h1>placeholder for circle</h1>
+            </div>
+            <div class="wrong">
+                <h1 class="wrongstyle">Wrong</h1><br />
+                <h1>%</h1><br /><span>2/6 questions</span>
+            </div>
 
-            <h3 class=" wrong"><strong style="font-size : 3rem; font-weight: 200;">Wrong</strong><br /><strong
-                    style="font-size : 3rem;">33.3%</strong><br><strong
-                    style="font-weight: 100;color:rgb(224, 224, 224)">2/6
-                    questions</strong></h3>
         </div>
 
-        <a href="review.html"><button class="btn">RATE US</button></a>
-    </div>
-    <div id="circlebox2">0</div>
-    <script src="results.js">
-    </script>
+        <div><a href="review.html"><button class="btn">RATE US</button></a></div>
+
+    </center>
 </body>
-
-=======
-
-</body>
-
-
->>>>>>> Connor/feature/develop
 
 </html>
