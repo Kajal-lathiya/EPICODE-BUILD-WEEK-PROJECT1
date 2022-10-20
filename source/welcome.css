@@ -2,12 +2,12 @@
 
 div:not(#mpEpiLogo, #logo) {
   text-align: left;
-  margin-left: 23.5%;
+  margin-left: 50%;
 }
 
 #logo {
   padding-bottom: 2%;
-  margin-left: 5%;
+  margin-left: 30%;
 }
 
 .mph1Bol {
