@@ -6,51 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WELCOME TO YOUR EXAM</title>
+  <link rel="stylesheet" href="commonStyles.css">
   <link rel="stylesheet" href="welcome.css">
 </head>
 
 <body>
-  <div class="card">
-    <div>
-      <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
-      <span class="mpEpiName"></span>
-    </div>
+  <div id="logo">
+    <img id="mpEpiLogo" alt="epicode_logo" src="epicode_logo.png" /><br />
+  </div>
 
-    <h1>Welcome to <br /><span class="mph1Bol">your exam<br /></span></h1>
+  <div id="header1">
+    <h1>Welcome to <br /><span id="mph1Bol">your exam<br /></span></h1>
+  </div>
 
-    <div>
-
-    </div>
-    <div>
-      <p>
-      <h3><span class="inst">Instructions</span></h3><br /><span class="mpPar1">
-        We don't expect most engineers to know the answers to all of these<br />
-        questions, so don't worry if You're unsure of a few of them.</span><br />
-      </p>
-    </div>
-    <div class="uol">
-      <uo>
-        <li>
-          Each question is <span class="mpBoldFont">timed</span> and can only be
-          <span class="mpBoldFont">answered once.</span>
-        </li>
-        <li>
-          Changing browser tab or opening other windows will
-          <span class="mpBoldFont">invalidate the question.</span>
-        </li>
-        <li>
-          This exam will take approx. <span class="mpBoldFont">0-5 minutes.</span><br />
-        </li>
-      </uo>
-    </div>
-    <div class="mpTickbox">
-      <input type="checkbox" checked="checked" />
-      <span>I promise to answer myself without help from anyone</span>
-      <button class="proceed">PROCEED</button>
-
-    </div>
+  <div>
 
   </div>
+  <div id="instdiv">
+    <p>
+    <h3><span class="inst">Instructions</span></h3><br /><span class="mpPar1">
+      We don't expect most engineers to know the answers to all of these<br />
+      questions, so don't worry if You're unsure of a few of them.</span><br />
+    </p>
+  </div>
+
+  <div id="uol">
+    <uo>
+      <li>
+        Each question is <span id="mpBoldFont">timed</span> and can only be
+        <span id="mpBoldFont">answered once.</span>
+      </li>
+      <li>
+        Changing browser tab or opening other windows will
+        <span id="mpBoldFont">invalidate the question.</span>
+      </li>
+      <li>
+        This exam will take approx. <span id="mpBoldFont">0-5 minutes.</span><br />
+      </li>
+    </uo>
+  </div>
+
+  <div class="mpTickbox">
+    <input type="checkbox" />
+    <span>I promise to answer myself without help from anyone</span>
+    <button id="proceed">PROCEED</button>
+
+  </div>
+
+
 </body>
 
 </html>
