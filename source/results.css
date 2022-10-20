@@ -1,42 +1,11 @@
-.header h1 {
-  text-align: center;
-  font-family: "inter", sans-serif;
-  font-weight: 600;
-  font-size: 3.5rem;
-}
-.header h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-weight: 200;
-  margin-top: 3.5vh;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;700&display=swap");
+
+body div {
+  margin-left: 0%;
 }
 
-.header {
-  line-height: 1vh;
-}
-
-.resultcircle {
-  display: flex;
-  text-align: center;
-}
-
-.correct {
-  position: absolute;
-  top: 45%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.wrong {
-  position: absolute;
-  top: 45%;
-  right: 0%;
-  transform: translate(-50%, -50%);
-}
-
-#circlebox p {
-  transform: translateY(50%);
+span {
+  filter: brightness(90%);
 }
 
 a:link {
@@ -55,13 +24,42 @@ a:active {
   text-decoration: none;
 }
 
+#results {
+  font-size: 4rem;
+  margin-bottom: -0.5%;
+}
+
+#summary {
+  font-size: 1.6rem;
+}
+
+#flexcontent {
+  display: inline-flex;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: -5%;
+}
+
+.correctstyle,
+.wrongstyle {
+  font-weight: 400;
+  margin-bottom: -15%;
+}
+
 .btn {
-  position: absolute;
+  margin-top: 20%;
   color: rgb(255, 255, 255);
   background: transparent;
-  border: 2px solid white;
-  transform: translate(37vh, 40vh);
+  border: 3px solid white;
   cursor: pointer;
-  height: 4vh;
-  width: 12vh;
+  height: 6vh;
+  width: 20%;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #ffffff;
+  font-family: "outfit", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 0 0 4px #ffffff;
 }
