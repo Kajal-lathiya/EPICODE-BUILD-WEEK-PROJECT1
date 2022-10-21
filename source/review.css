@@ -52,6 +52,7 @@ a:active {
   color: rgb(235, 232, 229);
   margin-bottom: 0;
 }
+
 .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
