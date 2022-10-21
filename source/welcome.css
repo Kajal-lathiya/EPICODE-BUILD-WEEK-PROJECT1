@@ -63,17 +63,16 @@ h4 {
   color: rgb(235, 232, 229);
 }
 input[type="checkbox"] {
-  appearance: none;
+  appearance: initial;
   height: 2.6vh;
   width: 2.6vh;
-  background-color: none;
+  background: transparent;
   border: solid 2px white;
   cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
-  content: "";
-  background-color: rgb(177, 177, 177);
+  appearance: revert;
 }
 
 #footer-bottom {
